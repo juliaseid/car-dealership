@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Models;
+using Dealership.Models;
 
 namespace Dealership
 {
@@ -9,11 +9,18 @@ namespace Dealership
     public static void Main()
     {
       Car volkswagen = new Car("1974 Volkswagen Thing", 1100, 368792, "So stylish and unique!");
-      Car yugo = new Car("1980 Yugo Koral", 700, 56000, "Is it French? Is it German?  Is it Japanese?  Who cares?  It runs!";
+      Car yugo = new Car("1980 Yugo Koral", 700, 56000, "Is it French? Is it German?  Is it Japanese?  Who cares?  It runs!");
       Car ford = new Car("1988 Ford Country Squire", 1400, 239001, "Stately and refined.");
       Car amc = new Car("1976 AMC Pacer", 400, 198000, "A bargain at any price, a steal today!");
 
       List<Car> Cars = new List<Car>() { volkswagen, yugo, ford, amc };
+
+      yugo.SetPrice(300);
+      ford.SetMileage(239052);
+     // yugo.MakeSound("rat-tat-tat");
+    // volkswagen.MakeSound("PSSSSSHHHT");
+     // ford.MakeSound("tikatikatikatik");
+     /// amc.MakeSound("bang");
 
       Console.WriteLine("Enter maximum price: ");
       string stringMaxPrice = Console.ReadLine();
@@ -34,7 +41,13 @@ namespace Dealership
         Console.WriteLine ("We're so sorry.  We have no cars in your price range.  Maybe consider a bicycle?");
       } else {
         foreach (Car automobile in CarsMatchingSearch) {
-          Console.WriteLine(automobile.GetMakeModel());
+            Console.WriteLine("----------------------");
+            Console.WriteLine(automobile.GetMakeModel());
+            Console.WriteLine(automobile.GetMiles() + " miles");
+            Console.WriteLine("$" + automobile.GetPrice());
+            Console.WriteLine(Car.MakeSound("bang"));
+            int rs = Car.PricePerMile(4000,40000);
+            Console.WriteLine(rs);
       }
     }
   }

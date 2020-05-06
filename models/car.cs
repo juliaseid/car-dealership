@@ -1,4 +1,6 @@
-namespace Models 
+using System;
+
+namespace Dealership.Models 
 {
   public class Car
   {
@@ -15,11 +17,45 @@ namespace Models
       _message = message;
     }
 
+    public static string MakeSound (string sound) {
+      return "This car makes the sound" + sound + "!";
+    }
+
+    public static int PricePerMile (int price, int miles) 
+    {
+      return (price/miles);
+    }
+
+    public void SetPrice(int newPrice)
+    {
+      _price = newPrice;
+    }
+
+    public void SetMileage(int newMileage)
+    {
+      _miles = newMileage;
+    }
+
     public string GetMakeModel () 
     {
       return _makeModel;
     }
 
+    public int GetPrice()
+    {
+      return _price;
+    }
+
+    public int GetMiles()
+    {
+      return _miles;
+    }
+
+    public string GetMessage()
+    {
+      return _message;
+    }
+    
     public bool WorthBuying(int maxPrice, int maxMileage)
     {
       return (_price < maxPrice && _miles < maxMileage);
