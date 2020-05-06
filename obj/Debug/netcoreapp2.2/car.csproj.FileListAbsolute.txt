@@ -1,0 +1,12 @@
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.csprojAssemblyReference.cache
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.csproj.CoreCompileInputs.cache
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.AssemblyInfoInputs.cache
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.AssemblyInfo.cs
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/bin/Debug/netcoreapp2.2/car.deps.json
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/bin/Debug/netcoreapp2.2/car.runtimeconfig.json
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/bin/Debug/netcoreapp2.2/car.runtimeconfig.dev.json
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/bin/Debug/netcoreapp2.2/car.dll
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/bin/Debug/netcoreapp2.2/car.pdb
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.dll
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.pdb
+/Users/juliaseidman/Documents/Epicodus/Week_8/car-dealership/obj/Debug/netcoreapp2.2/car.genruntimeconfig.cache
