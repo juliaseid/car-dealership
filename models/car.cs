@@ -23,7 +23,7 @@ namespace Dealership.Models
 
     public static int PricePerMile (int price, int miles) 
     {
-      return (price/miles);
+      return (miles/price);
     }
 
     public void SetPrice(int newPrice)

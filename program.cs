@@ -46,8 +46,8 @@ namespace Dealership
             Console.WriteLine(automobile.GetMiles() + " miles");
             Console.WriteLine("$" + automobile.GetPrice());
             Console.WriteLine(Car.MakeSound("bang"));
-            int rs = Car.PricePerMile(4000,40000);
-            Console.WriteLine(rs);
+            
+            Console.WriteLine(Car.PricePerMile(automobile.GetPrice(),automobile.GetMiles()));
       }
     }
   }
