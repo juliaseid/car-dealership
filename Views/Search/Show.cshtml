@@ -1,0 +1,14 @@
+
+@using Dealership.Models;
+
+<h1>NJ Junky Has Cars That Meet Your Needs!</h1>
+<ul>
+  @foreach (Car affordableCar in Model) // For every "Car" named affordableCar in carList that is the Model
+  {
+    <li>Model: @affordableCar.MakeModel, $@affordableCar.Price, Mileage: @affordableCar.Miles miles</li>
+    <li><em>@affordableCar.Description</em></li>
+    <br>
+  }
+
+</ul>
+@* <a href="/searchform">Find the car that meet your needs</a> *@

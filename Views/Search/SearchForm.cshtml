@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Search Form</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body> 
+    <div class="container">
+      <h1 class="jumbotron">List A Car For Sale at NJ Junky!</h1>
+      <form action="/searchform" method="post" class="form-group">
+        <label for="maxPrice">Enter a Price:</label>
+        <input id="maxPrice" name="maxPrice" type="number" required>
+        <br>
+        <label for="maxMileage">Enter Mileage:</label>
+        <input id="maxMileage" name="maxMileage" type="number" required>
+        
+        <button type="submit" class="btn btn-info">Submit</button>
+        
+      </form>
+    </div>
+  </body>
+</html>

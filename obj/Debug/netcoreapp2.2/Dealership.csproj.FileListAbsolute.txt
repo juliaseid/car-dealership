@@ -24,3 +24,5 @@
 /Users/juliaseidman/Documents/Epicodus/Week_10/Dealership.Solution/obj/Debug/netcoreapp2.2/Dealership.pdb
 /Users/juliaseidman/Documents/Epicodus/Week_10/Dealership.Solution/obj/Debug/netcoreapp2.2/Dealership.genruntimeconfig.cache
 /Users/juliaseidman/Documents/Epicodus/Week_10/Dealership.Solution/obj/Debug/netcoreapp2.2/Dealership.csproj.CopyComplete
+/Users/juliaseidman/Documents/Epicodus/Week_10/Dealership.Solution/obj/Debug/netcoreapp2.2/Razor/Views/Search/SearchForm.cshtml.g.cs
+/Users/juliaseidman/Documents/Epicodus/Week_10/Dealership.Solution/obj/Debug/netcoreapp2.2/Razor/Views/Search/Show.cshtml.g.cs

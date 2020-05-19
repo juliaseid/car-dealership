@@ -4,7 +4,10 @@
 <ul>
   @foreach (Car car in Model)
   {
-    <li>@car.MakeModel</li>
+    <li>Model: @car.MakeModel, $@car.Price, Mileage: @car.Miles miles</li>
+    <li><em>@car.Description</em></li>
+    <br>
   }
 
 </ul>
+<a href="/searchform">Find the car that meet your needs</a>
