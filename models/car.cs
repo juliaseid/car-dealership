@@ -1,64 +1,40 @@
 using System;
+using System.Collections.Generic;
 
 namespace Dealership.Models
 {
   public class Car
   {
-    private string _makeModel;
-    private int _price;
-    private int _miles;
-    private string _message;
+    public string MakeModel {get; set;}
+    public int Price {get; set;}
+    public int Miles {get; set;}
+    public string Description {get; set;}
+    private static List<Car> _allCars = new List<Car> {};
 
-    public Car(string makeModel, int price, int miles, string message)
+    public Car(string makeModel, int price, int miles, string description)
     {
-      _makeModel = makeModel;
-      _price = price;
-      _miles = miles;
-      _message = message;
-    }
-
-    public static string MakeSound (string sound) {
-      return "This car makes the sound" + sound + "!";
-    }
-
-    // public static int PricePerMile (int price, int miles) 
-    // {
-    //   return (miles/price);
-    // }
-
-    public void SetPrice(int newPrice)
-    {
-      _price = newPrice;
-    }
-
-    public void SetMileage(int newMileage)
-    {
-      _miles = newMileage;
-    }
-
-    public string GetMakeModel ()
-    {
-      return _makeModel;
-    }
-
-    public int GetPrice()
-    {
-      return _price;
-    }
-
-    public int GetMiles()
-    {
-      return _miles;
-    }
-
-    public string GetMessage()
-    {
-      return _message;
+      MakeModel = makeModel;
+      Price = price;
+      Miles = miles;
+      Description = description;
+      _allCars.Add(this);
     }
 
     public bool WorthBuying(int maxPrice, int maxMileage)
     {
-      return (_price < maxPrice && _miles < maxMileage);
+      return (Price < maxPrice && Miles < maxMileage);
     }
+
+    public static List<Car> GetAll()
+    {
+      return _allCars;
+    }
+    
+    public static void ClearAll()
+    {
+      _allCars.Clear();
+    }
+  
+  
   }
 }

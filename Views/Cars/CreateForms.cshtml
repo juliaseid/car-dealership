@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Entry Form</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body> 
+    <div class="container">
+      <h1 class="jumbotron">List A Car For Sale at NJ Junky!</h1>
+      <form action="/cars" method="post" class="form-group">
+        <label for="makeModel">Enter a Car Model:</label>
+        <input id="makeModel" name="makeModel" type="text" required>
+        <br>
+        <label for="price">Enter a Price:</label>
+        <input id="price" name="price" type="number" required>
+        <br>
+        <label for="miles">Enter Mileage:</label>
+        <input id="miles" name="miles" type="number" required>
+        <br>
+        <label for="description">Enter a Description:</label>
+        <input id="description" name="description" type="text" required>
+        
+        <button type="submit" class="btn btn-info">Submit</button>
+        
+      </form>
+    </div>
+  </body>
+</html>

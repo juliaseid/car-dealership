@@ -1,0 +1,10 @@
+@using Dealership.Models;
+
+<h1>Cars For Sale At NJ Junky!</h1>
+<ul>
+  @foreach (Car car in Model)
+  {
+    <li>@car.MakeModel</li>
+  }
+
+</ul>
