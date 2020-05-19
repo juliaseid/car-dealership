@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Dealership.Models;
 using System.Collections.Generic;
+using System;
+
 
 namespace Dealership.Controllers
 {
@@ -16,12 +18,19 @@ namespace Dealership.Controllers
     public ActionResult Create(int maxPrice, int maxMileage)
     {
       List<Car> carList = Car.WorthBuying(maxPrice,maxMileage);
-      return View("Show", carList);
+
+ 
+      // ViewBag.matchList = Car.WorthBuying(maxPrice, maxMileage);
+      // Car.MakeTestList();
+      // System.Console.WriteLine(Car.OnTheLot.Count);
+      Car testCar = new Car("test", 0, 0, "test");
+      return View("Show", Car.TestList);
     }
 
     [HttpGet("/show")]
     public ActionResult Show(List<Car> carList)
     {
+      System.Console.WriteLine(carList.Count);
       return View(carList);
     }
 
