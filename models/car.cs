@@ -1,6 +1,6 @@
 using System;
 
-namespace Dealership.Models 
+namespace Dealership.Models
 {
   public class Car
   {
@@ -21,10 +21,10 @@ namespace Dealership.Models
       return "This car makes the sound" + sound + "!";
     }
 
-    public static int PricePerMile (int price, int miles) 
-    {
-      return (miles/price);
-    }
+    // public static int PricePerMile (int price, int miles) 
+    // {
+    //   return (miles/price);
+    // }
 
     public void SetPrice(int newPrice)
     {
@@ -36,7 +36,7 @@ namespace Dealership.Models
       _miles = newMileage;
     }
 
-    public string GetMakeModel () 
+    public string GetMakeModel ()
     {
       return _makeModel;
     }
@@ -55,7 +55,7 @@ namespace Dealership.Models
     {
       return _message;
     }
-    
+
     public bool WorthBuying(int maxPrice, int maxMileage)
     {
       return (_price < maxPrice && _miles < maxMileage);
